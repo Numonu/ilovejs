@@ -1,0 +1,26 @@
+---
+import "@fontsource/poppins";
+import '@fontsource-variable/roboto-slab';
+
+interface Props{
+	title : string,
+	description : string,
+}
+const {title , description} = Astro.props;
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description}>
+		<title>{title}</title>
+	</head>
+	<body>
+		<div class="bg-zinc-900 text-neutral-50 min-h-screen font-poppins">
+			<slot/>
+		</div>
+	</body>
+</html>
