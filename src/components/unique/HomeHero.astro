@@ -1,0 +1,30 @@
+---
+import Wrapper from "../reusable/atoms/Wrapper.astro";
+---
+<style>
+    .pattern{
+        --line-color : rgba(255, 230, 0, 0.15);
+        --size : 10px;
+
+        background-image:  radial-gradient(transparent 30% , rgb(24 , 24 , 27) 70%) , linear-gradient(90deg , transparent 90% , var(--line-color) 90%) , linear-gradient(0deg , var(--line-color) 10% , transparent 10%);
+        background-size: auto auto , var(--size) var(--size) , var(--size) var(--size);
+    }
+    .javascript{
+        text-shadow: rgba(255, 255, 0, 0.5) 0 0 20px;
+    }
+</style>
+<section class="pattern min-h-screen flex justify-center items-center text-center">
+    <Wrapper>
+        <div class="relative w-20 aspect-square mx-auto mb-16 md:w-28 ">
+            <img class="absolute translate-y-2 translate-x-2 hue-rotate-[30deg]" src="resource/svg/js.svg" alt="javascript">
+            <img class="absolute translate-y-1 translate-x-1 hue-rotate-[60deg]" src="resource/svg/js.svg" alt="javascript">
+            <img class="absolute" src="resource/svg/js.svg" alt="javascript">
+        </div>
+        <h1 class="mb-12 text-4xl font-normal font-roboto md:text-6xl ">Aprende <strong class="javascript text-yellow-400 font-medium">JavaScript</strong> para <br class="hidden lg:block"/> <strong class="font-normal">Desarrollo Web</strong></h1>
+        <p class="text-lg font-light">
+            Domina <strong class="bg-yellow-400 text-black inline-block px-1 rotate-[3deg]">JavaScript</strong> desde sus fundamentos hasta
+            temas avanzados. Un <strong class="text-lime-400 underline decoration-wavy underline-offset-4 capitalize">curso gratuito</strong> para <br class="hidden lg:block"/> convertirte en un
+            desarrollador web ninja
+        </p>
+    </Wrapper>
+</section>
