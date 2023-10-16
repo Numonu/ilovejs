@@ -1,0 +1,14 @@
+---
+interface Props{
+    href : string
+}
+const {href} = Astro.props;
+---
+<a class="inline-block relative group overflow-hidden" href={href}>
+    <div class="py-1 group-hover:-translate-y-full transition-transform">
+        <slot/>
+    </div>
+    <div class="text-yellow-300 absolute bottom-0 left-0 py-1 translate-y-full group-hover:translate-y-0 transition-transform">
+        <slot/>
+    </div>
+</a>
