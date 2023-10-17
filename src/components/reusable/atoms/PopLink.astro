@@ -1,8 +1,8 @@
 ---
 interface Props{
-    href : string
+    href? : string
 }
-const {href} = Astro.props;
+const {href = "#"} = Astro.props;
 ---
 <a class="inline-block relative group overflow-hidden" href={href}>
     <div class="py-1 group-hover:-translate-y-full transition-transform">
