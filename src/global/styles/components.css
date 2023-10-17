@@ -1,0 +1,10 @@
+@tailwind components;
+
+@layer components{
+    .text-subtitle{
+        @apply mb-8 text-3xl font-roboto font-normal;
+    }
+    .mb-section{
+        @apply mb-24;
+    }
+}
