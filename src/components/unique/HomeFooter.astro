@@ -1,0 +1,20 @@
+---
+import Logo from "@reusable/atoms/Logo.astro";
+import Wrapper from "@reusable/atoms/Wrapper.astro";
+
+---
+
+<footer class="bg-zinc-900 border-neutral-600 p-4 pt-16 border-t-[1px]">
+    <Wrapper>
+        <div class="flex justify-center flex-wrap items-end sm:justify-between">
+            <div>
+                <Logo/>
+                <span class="block mb-1 text-sm">Gracias por leer! </span> <span class="block opacity-50 text-xs">© 2023-present. todos los derechos reservados</span>
+            </div>
+
+        <span class="text-sm">
+            Creado con <img class="inline-block w-6" src="resource/svg/heart.svg"/> por <a class="hover:text-pinia-300" href="https://www.twitter.com/@numonudev" target="_blank">@numonudev</a>
+        </span>
+        </div>
+    </Wrapper>
+</footer>
