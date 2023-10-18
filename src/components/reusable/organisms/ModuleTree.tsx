@@ -21,7 +21,7 @@ const ModuleTree: FC<ModuleTreeProps> = ({ data }) => {
 
 	return (
 		<>
-			<header className="mb-16 flex justify-between items-center flex-wrap">
+			<header className="mb-16 flex gap-6 justify-between items-center flex-wrap">
 				<h2 className="text-subtitle" style={{"marginBottom" : "0px"}}>
 					Módulo :{" "}
 					<span
