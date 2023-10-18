@@ -1,5 +1,5 @@
 import { useState, type FC } from "react";
-import ModuleCard from "@/components/reusable/molecules/ModuleCard";
+import ModuleCard from "@reusable/molecules/ModuleCard";
 import Selector from "../molecules/Selector";
 import capitalize from "@/global/utils/capitalize";
 
