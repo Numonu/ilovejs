@@ -23,7 +23,7 @@ const ModuleTree: FC<ModuleTreeProps> = ({ data }) => {
 		<>
 			<header className="mb-16 flex justify-between items-center flex-wrap">
 				<h2 className="text-subtitle" style={{"marginBottom" : "0px"}}>
-					Modulo :{" "}
+					Módulo :{" "}
 					<span
 						className="border-pinia-300 text-pinia-300 border-b-[3px] border-dotted"
 						id="module_title"
