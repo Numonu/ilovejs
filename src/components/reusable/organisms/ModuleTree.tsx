@@ -33,7 +33,7 @@ const ModuleTree: FC<ModuleTreeProps> = ({ data }) => {
 				</h2>
 				<Selector
 					onChange={changeModule}
-					defaultModule={moduleSelect}
+					defaultSelect={moduleSelect}
 					optionList={modulesAvalibles}
 				/>
 			</header>
