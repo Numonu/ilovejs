@@ -1,0 +1,40 @@
+---
+interface Props {
+	author: string;
+	partners: string[];
+	pubDate: string;
+}
+const { author, partners, pubDate } = Astro.props;
+---
+
+<section class="mb-16">
+	<time class="opacity-80 block mb-6 text-center text-xs"
+		>{new Date(pubDate).toLocaleString()}</time
+	>
+	<div class="flex flex-wrap justify-center gap-8">
+		<div class="flex items-center gap-2">
+			<img class="w-8" src="/resource/svg/paper.svg" alt="paper icon" />
+			<div class="text-sm">
+				<span class="text-xs opacity-80">Autor :</span>
+				<strong class="block font-medium">{author}</strong>
+			</div>
+		</div>
+		{
+			partners.map((e) => {
+				return (
+					<div class="flex items-center gap-2">
+						<img
+							class="w-8 hue-rotate-180"
+							src="/resource/svg/paper.svg"
+							alt="paper icon"
+						/>
+						<div class="text-sm">
+							<span class="text-xs opacity-80">Socio :</span>
+							<strong class="block font-medium">{e}</strong>
+						</div>
+					</div>
+				);
+			})
+		}
+	</div>
+</section>
