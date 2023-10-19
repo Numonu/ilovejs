@@ -12,7 +12,7 @@ interface Props {
 const { back, next } = Astro.props;
 ---
 
-<nav class="grid grid-cols-[1fr_1fr_1fr]">
+<nav class="grid gap-4 md:grid-cols-[1fr_1fr_1fr]">
 	<a
 		class="border-neutral-900 outline-zinc-700 bg-gradient-to-t from-neutral-900 to-zinc-800 max-w-[450px] p-4 border-4 outline outline-1 rounded-lg cursor-pointer hover:from-neutral-950 hover:to-zinc-800"
 		href={back.link}
