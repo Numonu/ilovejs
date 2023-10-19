@@ -25,7 +25,7 @@ const ModuleTree: FC<ModuleTreeProps> = ({ data }) => {
 				<h2 className="text-subtitle" style={{"marginBottom" : "0px"}}>
 					Módulo :{" "}
 					<span
-						className="border-pinia-300 text-pinia-300 border-b-[3px] border-dotted"
+						className="text-pinia-300"
 						id="module_title"
 					>
 						{capitalize(moduleSelect)}
