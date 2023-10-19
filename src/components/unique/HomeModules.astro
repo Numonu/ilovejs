@@ -6,7 +6,7 @@ const allPost = await Astro.glob("../../pages/articles/*/*.md");
 //Usando la info de los documentos creamos un arreglo con sus datos relevantes
 const data = allPost.map(e => {
 	//usando la url obtenemos el nombre del articulo y al modulo al que pertenecen
-	const [moduleName , articleName] = e.url!.replace(/-/g , " ").split("/").filter(e => e).slice(1);
+	const [moduleName , articleName] = e.url!.replace(/-/g , " ").split("/").filter(e => e).slice(1).map(e => e.slice(2));
 	const href = e.url as string;
 	//usando la informacion definida dentro del documento obtenemos la siguiente info
 	const description = e.frontmatter.description as string;
