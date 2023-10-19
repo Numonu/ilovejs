@@ -1,16 +1,26 @@
 ---
-
+import BaseLayout from "@/layout/BaseLayout.astro";
+import HomeHero from "@unique/HomeHero.astro";
+import HomeHeader from "@unique/HomeHeader.astro";
+import HomeAbout from "@unique/HomeAbout.astro";
+import HomeModules from "@unique/HomeModules.astro";
+import HomeFAQ from "@/components/unique/HomeFAQ.astro";
+import Wrapper from "@/components/reusable/atoms/Wrapper.astro";
+import HomeSuggestions from "@/components/unique/HomeSuggestions.astro";
+import HomeFooter from "@unique/HomeFooter.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+	title="Aprende JavaScript para Desarrollo Web Gratis y en Español | ILoveJS"
+	description="Domina JavaScript desde sus fundamentos hasta temas avanzados. Un curso gratuito para convertirte en un desarrollador web ninja"
+>
+	<HomeHeader />
+	<Wrapper>
+		<HomeHero />
+		<HomeAbout />
+		<HomeModules />
+		<HomeFAQ />
+		<HomeSuggestions/>
+	</Wrapper>
+	<HomeFooter/>
+</BaseLayout>
