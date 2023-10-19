@@ -18,6 +18,7 @@ next :
 
 # Adjuntar
 author: nombre del autor del articulo
+partners : ["socio 1" , "socio 2"]
 banner: "link a la imagen del banner"
 pubDate: 2022-08-08 # fecha de la publicacion
 ---
