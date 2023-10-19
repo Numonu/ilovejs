@@ -1,0 +1,37 @@
+---
+interface Props {
+	back: {
+		link: string;
+		name: string;
+	};
+	next: {
+		link: string;
+		name: string;
+	};
+}
+const { back, next } = Astro.props;
+---
+
+<nav class="grid grid-cols-[1fr_1fr_1fr]">
+	<a
+		class="border-neutral-900 outline-zinc-700 bg-gradient-to-t from-neutral-900 to-zinc-800 max-w-[450px] p-4 border-4 outline outline-1 rounded-lg cursor-pointer hover:from-neutral-950 hover:to-zinc-800"
+		href={back.link}
+	>
+		<div class="flex gap-2 items-center">
+            <img class="w-6 opacity-50 rotate-180" src="/resource/svg/arrow.svg" alt="arrow icon">
+			<span class="text-sm opacity-50">Pagina Anterior</span>
+		</div>
+        <span class="block">{back.name}</span>
+	</a>
+    <div></div>
+	<a
+		class="border-neutral-900 outline-zinc-700 bg-gradient-to-t from-neutral-900 to-zinc-800 max-w-[450px] p-4 border-4 outline outline-1 rounded-lg cursor-pointer hover:from-neutral-950 hover:to-zinc-800"
+		href={next.link}
+	>
+		<div class="flex gap-2 items-center">
+			<span class="text-sm opacity-50">Pagina Siguiente</span>
+            <img class="w-6 opacity-50" src="/resource/svg/arrow.svg" alt="arrow icon">
+		</div>
+        <span>{next.name}</span>
+	</a>
+</nav>
