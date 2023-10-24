@@ -1,0 +1,22 @@
+---
+interface Props {
+	list: string[][];
+}
+const { list } = Astro.props;
+---
+
+<span class="text-xs">
+	Fuentes :
+	{
+		list.map(([name , link] , i) => {
+			return (
+				<>
+					<a class="underline hover:text-pinia-300" target="_blank" href={link}>
+						{name}
+					</a>
+					{list.length - 1 !== i && " , "}
+				</>
+			);
+		})
+	}
+</span>
