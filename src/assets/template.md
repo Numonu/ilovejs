@@ -16,6 +16,11 @@ next :
     link : "link del articulo anterior"
     name : "nombre del articulo anterior"
 
+references : [
+    ["name" , "link"],
+    ["name" , "link"],
+]      
+
 # Adjuntar
 author: nombre del autor del articulo
 partners : ["socio 1" , "socio 2"]
