@@ -58,30 +58,39 @@ const { frontmatter } = Astro.props;
 			:root {
 				--pinia: rgb(253 224 71);
 			}
-			h2{
-				text-decoration: underline wavy var(--pinia);
-				text-decoration-thickness: 2px;
-				text-underline-offset: 8px;
+			h2 , h3{
+				margin: 2rem 0 !important;
 			}
 			h1 {
 				font-size: 2rem !important;
 				font-weight: 900 !important;
-				margin-bottom: 4rem !important;
 				text-align: center;
 				font-family: "Roboto Slab Variable";
+				margin-bottom: 4rem !important;
+
+				text-decoration: underline wavy var(--pinia);
+				text-decoration-thickness: 2px;
+				text-underline-offset: 8px;
 			}
 			h2 {
 				font-size: 1.5rem !important;
-				font-weight: 900 !important;
+				
+
+				text-decoration: underline wavy crimson;
+				text-decoration-thickness: 1.5px;
+				text-underline-offset: 8px;
 			}
 			h3 {
-				font-size: 1.2rem !important;
-				font-weight: 900 !important;
+				font-size: 1rem !important;
+				
+
+				text-decoration: underline wavy indigo;
+				text-decoration-thickness: 1.5px;
+				text-underline-offset: 8px;
 			}
 			p {
 				margin-bottom: 1rem !important;
-				opacity: 0.9;
-				font-weight: 300;
+				font-weight: 300 !important;
 			}
 			pre {
 				border-radius: 1rem;
@@ -90,8 +99,7 @@ const { frontmatter } = Astro.props;
 			ol,
 			ul,
 			pre,
-			h3,
-			h2 {
+			{
 				margin-bottom: 1rem !important;
 			}
 			li::before {
@@ -125,6 +133,14 @@ const { frontmatter } = Astro.props;
 					auto auto,
 					var(--size) var(--size),
 					var(--size) var(--size);
+			}
+			strong{
+				display : inline-block;
+				padding : .1rem;
+				color : black;
+				border-bottom : .2rem solid rgb(209, 0, 150);
+				border-radius: .2rem;
+				background-color : rgb(252, 56, 197);
 			}
 		</style>
 	</body>
