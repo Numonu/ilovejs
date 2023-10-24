@@ -1,0 +1,131 @@
+---
+import "@fontsource/poppins";
+import "@fontsource-variable/roboto-slab";
+
+import SlideBack from "@/components/reusable/atoms/SlideBack.astro";
+import HomeFooter from "@/components/unique/HomeFooter.astro";
+import HomeHeader from "@/components/unique/HomeHeader.astro";
+import Writers from "@/components/reusable/molecules/Writers.astro";
+import References from "@/components/reusable/molecules/References.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={frontmatter.description} />
+		<meta name="keywords" content={frontmatter.keywords}>
+		<title>{frontmatter.title}</title>
+	</head>
+	<body>
+		<div
+			class="bg-zinc-900 text-neutral-50 pattern min-h-screen font-poppins"
+		>
+			<div class="sticky top-0 z-10">
+				<HomeHeader />
+			</div>
+			<section
+				class="bg-zinc-950 h-[7rem] bg-cover bg-center md:h-[15rem]"
+				style=`background-image: url(${frontmatter.banner})`
+			>
+			</section>
+			<main class="max-w-[900px] px-4 mx-auto">
+				<div class="py-16">
+					<Writers
+						pubDate={frontmatter.pubDate}
+						author={frontmatter.author}
+						partners={frontmatter.partners}
+					/>
+					<slot />
+					<footer>
+						<References list={frontmatter.references}/>
+					</footer>
+					<nav class="mt-16">
+						<SlideBack
+							back={{ ...frontmatter.back }}
+							next={{ ...frontmatter.next }}
+						/>
+					</nav>
+				</div>
+			</main>
+			<HomeFooter />
+		</div>
+		<style is:inline>
+			:root {
+				--pinia: rgb(253 224 71);
+			}
+			h2{
+				text-decoration: underline wavy var(--pinia);
+				text-decoration-thickness: 2px;
+				text-underline-offset: 8px;
+			}
+			h1 {
+				font-size: 2rem !important;
+				font-weight: 900 !important;
+				margin-bottom: 4rem !important;
+				text-align: center;
+				font-family: "Roboto Slab Variable";
+			}
+			h2 {
+				font-size: 1.5rem !important;
+				font-weight: 900 !important;
+			}
+			h3 {
+				font-size: 1.2rem !important;
+				font-weight: 900 !important;
+			}
+			p {
+				margin-bottom: 1rem !important;
+				opacity: 0.9;
+				font-weight: 300;
+			}
+			pre {
+				border-radius: 1rem;
+				padding: 1rem;
+			}
+			ol,
+			ul,
+			pre,
+			h3,
+			h2 {
+				margin-bottom: 1rem !important;
+			}
+			li::before {
+				content: "";
+				width: 0.4rem;
+				margin-right: 0.5rem;
+				display: inline-block;
+				aspect-ratio: 1/1;
+				border-radius: 100%;
+				background-color: var(--pinia);
+			}
+			.pattern {
+				--line-color: rgba(255, 230, 0, 0.1);
+				--size: 10px;
+
+				background-image: radial-gradient(
+						transparent 30%,
+						rgb(24, 24, 27) 70%
+					),
+					linear-gradient(
+						90deg,
+						transparent 90%,
+						var(--line-color) 90%
+					),
+					linear-gradient(
+						0deg,
+						var(--line-color) 10%,
+						transparent 10%
+					);
+				background-size:
+					auto auto,
+					var(--size) var(--size),
+					var(--size) var(--size);
+			}
+		</style>
+	</body>
+</html>
