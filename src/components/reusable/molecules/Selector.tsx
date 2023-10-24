@@ -36,6 +36,7 @@ const Selector: FC<SelectorProps> = ({
 				{optionList.map((el, i) => {
 					return (
 						<li
+							key={el}
 							role="button"
 							className="py-2 pl-2 pr-4 grid grid-cols-[1.5rem_1fr] gap-2 hover:bg-pinia-300 hover:text-black"
 							onClick={() => onChange(el)}

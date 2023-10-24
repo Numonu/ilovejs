@@ -40,6 +40,7 @@ const ModuleTree: FC<ModuleTreeProps> = ({ data }) => {
 			<div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 				{data.filter(e => e.moduleName === moduleSelect).map((e) => (
 					<ModuleCard
+						key={e.articleName}
 						title={e.articleName}
 						description={e.description}
 						iconName={e.iconName}
