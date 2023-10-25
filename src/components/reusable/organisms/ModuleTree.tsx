@@ -7,7 +7,7 @@ interface ModuleTreeProps {
 	data: {
 		moduleName: string;
 		articleName: string;
-		description: string;
+		summary: string;
 		iconName: string;
 		href: string;
 	}[];
@@ -42,7 +42,7 @@ const ModuleTree: FC<ModuleTreeProps> = ({ data }) => {
 					<ModuleCard
 						key={e.articleName}
 						title={e.articleName}
-						description={e.description}
+						description={e.summary}
 						iconName={e.iconName}
 						href={e.href}
 					/>

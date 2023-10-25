@@ -13,13 +13,13 @@ const data = allPost.map(e => {
 	const [moduleName , articleName] = href.replace(/-/g , " ").split("/").filter(e => e).slice(1).map(e => e.slice(2));
 
 	//usando la informacion definida dentro del documento obtenemos la siguiente info
-	const description = e.frontmatter.description as string;
+	const summary = e.frontmatter.summary as string;
 	const iconName =  e.frontmatter.iconName as string;
 
 	return ({
 		moduleName,
 		articleName,
-		description,
+		summary,
 		iconName,
 		href,
 	})
