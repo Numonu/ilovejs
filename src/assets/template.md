@@ -3,28 +3,28 @@
 iconName: nombre del icono
 
 # Metadatos
-layout: link del layout
-title: Ejemplo de titulo
-description: "ejemplo de descripcion"
-keywords : ["ejemplo","ejemplo"]
+layout: ../../../layout/ArticleLayout.astro
+title: titulo de la pagina
+description: descripcion de la pagina
+keywords : ["keyword","keyword"]
 
 # Navegacion
 back : 
     link : "link del articulo anterior"
     name : "nombre del articulo anterior"
 next : 
-    link : "link del articulo anterior"
-    name : "nombre del articulo anterior"
+    link : "link del articulo posterior"
+    name : "nombre del articulo posterior"
 
 references : [
-    ["name" , "link"],
-    ["name" , "link"],
+    ["nombre" , "link a la referencia"],
+    ["nombre" , "link a la referencia"],
 ]      
 
 # Adjuntar
-summary : "ejemplo de resumen"
-author: nombre del autor del articulo
-partners : ["socio 1" , "socio 2"]
+summary : "resumen que se mostrara en la card"
+author: autor del artidulo
+partners : ["socio del articulo" , "socio del articulo"]
 banner: "link a la imagen del banner"
 pubDate: 2022-08-08 # fecha de la publicacion
 ---
