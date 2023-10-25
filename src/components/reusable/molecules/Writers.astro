@@ -19,8 +19,8 @@ const { author, partners, pubDate } = Astro.props;
 				<span class="block font-medium">{author}</span>
 			</div>
 		</div>
-		{
-			partners.map((e) => {
+			{
+				partners?.map((e) => {
 				return (
 					<div class="flex items-center gap-2">
 						<img
