@@ -7,6 +7,7 @@ import HomeFooter from "@/components/unique/HomeFooter.astro";
 import HomeHeader from "@/components/unique/HomeHeader.astro";
 import Writers from "@/components/reusable/molecules/Writers.astro";
 import References from "@/components/reusable/molecules/References.astro";
+import ConditionalRender from "@/components/reusable/atoms/ConditionalRender.astro";
 
 const { frontmatter } = Astro.props;
 ---
@@ -42,7 +43,9 @@ const { frontmatter } = Astro.props;
 					/>
 					<slot />
 					<footer>
-						<References list={frontmatter.references}/>
+						<ConditionalRender controller={frontmatter.references}>
+							<References list={frontmatter.references}/>
+						</ConditionalRender>
 					</footer>
 					<nav class="mt-16">
 						<SlideBack
@@ -83,7 +86,6 @@ const { frontmatter } = Astro.props;
 			h3 {
 				font-size: 1rem !important;
 				
-
 				text-decoration: underline wavy indigo;
 				text-decoration-thickness: 1.5px;
 				text-underline-offset: 8px;
