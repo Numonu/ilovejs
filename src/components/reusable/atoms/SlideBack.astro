@@ -37,7 +37,7 @@ let data: IData[] = allPost.map((e) => {
 });
 /*
 Hacemos un segundo mapeo en los datos, esta vez para inyectar informacion
-de los datos adyacentes (resultaba mas practico hacerlo en un nuevo map)
+de los datos adyacentes
 */
 data.forEach((e, i) => {
   const next = data[i + 1];
