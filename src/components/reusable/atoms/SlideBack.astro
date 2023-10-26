@@ -1,37 +1,100 @@
 ---
 interface Props {
-	back: {
-		link: string;
-		name: string;
-	};
-	next: {
-		link: string;
-		name: string;
-	};
+  fileName: string;
 }
-const { back, next } = Astro.props;
+interface IMinData {
+  articleName: string;
+  href: string;
+}
+interface IData extends IMinData {
+  next: IMinData;
+  back: IMinData;
+}
+
+const defaultIMinData = {
+  articleName: "Pagina Principal",
+  href: "/",
+};
+
+//Obtenemos el nombre del archivo que representa el articulo actual
+const { fileName } = Astro.props;
+
+//Obtenemos todos los documuentos md
+const allPost = await Astro.glob("../../../pages/articles/*/*.md");
+
+//Usando la info de los documentos creamos un arreglo con sus datos relevantes
+let data: IData[] = allPost.map((e) => {
+  //obtenemos la ruta (revelada por Astro) y el nombre del archivo (incrustado en el frontmatter)
+  const href = e.url as string;
+  const articleName = e.frontmatter.articleName;
+
+  return {
+    articleName,
+    href,
+    next: defaultIMinData,
+    back: defaultIMinData,
+  };
+});
+/*
+Hacemos un segundo mapeo en los datos, esta vez para inyectar informacion
+de los datos adyacentes (resultaba mas practico hacerlo en un nuevo map)
+*/
+data.forEach((e, i) => {
+  const next = data[i + 1];
+  const back = data[i - 1];
+  //
+  if (next) {
+    e.next = {
+      articleName: next.articleName,
+      href: next.href,
+    };
+  }
+  if (back) {
+    e.back = {
+      articleName: back.articleName,
+      href: back.href,
+    };
+  }
+});
+
+//Obtenemos los datos que corresponden al articulo actual
+
+const me = data.find((e) => {
+  return e.articleName == fileName;
+});
+
+if (!me)
+  throw new ReferenceError(`[!] El articulo de nombre "${fileName}" no existe`);
 ---
 
 <nav class="grid gap-4 md:grid-cols-[1fr_1fr_1fr]">
-	<a
-		class="border-neutral-900 outline-zinc-700 bg-gradient-to-t from-neutral-900 to-zinc-800 max-w-[450px] p-4 border-4 outline outline-1 rounded-lg cursor-pointer hover:from-neutral-950 hover:to-zinc-800"
-		href={back.link}
-	>
-		<div class="flex gap-2 items-center">
-            <img class="w-6 opacity-50 rotate-180" src="/resource/svg/arrow.svg" alt="arrow icon">
-			<span class="text-sm opacity-50">Página Anterior</span>
-		</div>
-        <span class="block">{back.name}</span>
-	</a>
-    <div></div>
-	<a
-		class="border-neutral-900 outline-zinc-700 bg-gradient-to-t from-neutral-900 to-zinc-800 max-w-[450px] p-4 border-4 outline outline-1 rounded-lg cursor-pointer hover:from-neutral-950 hover:to-zinc-800"
-		href={next.link}
-	>
-		<div class="flex gap-2 items-center">
-			<span class="text-sm opacity-50">Página Siguiente</span>
-            <img class="w-6 opacity-50" src="/resource/svg/arrow.svg" alt="arrow icon">
-		</div>
-        <span>{next.name}</span>
-	</a>
+  <a
+    class="border-neutral-900 outline-zinc-700 bg-gradient-to-t from-neutral-900 to-zinc-800 max-w-[450px] p-4 border-4 outline outline-1 rounded-lg cursor-pointer hover:from-neutral-950 hover:to-zinc-800"
+    href={me.back.href}
+  >
+    <div class="flex gap-2 items-center">
+      <img
+        class="w-6 opacity-50 rotate-180"
+        src="/resource/svg/arrow.svg"
+        alt="arrow icon"
+      />
+      <span class="text-sm opacity-50">Página Anterior</span>
+    </div>
+    <span class="block">{me.back.articleName}</span>
+  </a>
+  <div></div>
+  <a
+    class="border-neutral-900 outline-zinc-700 bg-gradient-to-t from-neutral-900 to-zinc-800 max-w-[450px] p-4 border-4 outline outline-1 rounded-lg cursor-pointer hover:from-neutral-950 hover:to-zinc-800"
+    href={me.next.href}
+  >
+    <div class="flex gap-2 items-center">
+      <span class="text-sm opacity-50">Página Siguiente</span>
+      <img
+        class="w-6 opacity-50"
+        src="/resource/svg/arrow.svg"
+        alt="arrow icon"
+      />
+    </div>
+    <span>{me.next.articleName}</span>
+  </a>
 </nav>
