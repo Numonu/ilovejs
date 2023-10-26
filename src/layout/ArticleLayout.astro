@@ -49,8 +49,7 @@ const { frontmatter } = Astro.props;
 					</footer>
 					<nav class="mt-16">
 						<SlideBack
-							back={{ ...frontmatter.back }}
-							next={{ ...frontmatter.next }}
+							fileName = {frontmatter.articleName}
 						/>
 					</nav>
 				</div>
@@ -102,7 +101,10 @@ const { frontmatter } = Astro.props;
 			ul,
 			pre,
 			{
-				margin-bottom: 1rem !important;
+				margin-bottom: 2rem !important;
+			}
+			li{
+				margin-bottom : 1rem !important;
 			}
 			li::before {
 				content: "";
