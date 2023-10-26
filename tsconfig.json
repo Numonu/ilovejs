@@ -1,7 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "D:/Desktop/ilovejs",
+    "baseUrl": "C:/Users/Juan David/Desktop/ilovejs",
     "paths": {
       "@/*": [
         "src/*"
