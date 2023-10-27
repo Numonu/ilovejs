@@ -1,18 +1,20 @@
 ---
 import ModuleTree from "@reusable/organisms/ModuleTree";
 
-//Obtenemos todos los documuentos md
+//Obtenemos todos los documuentos 
 const allPost = await Astro.glob("../../pages/articles/*/*.md");
+
 //Usando la info de los documentos creamos un arreglo con sus datos relevantes
 const data = allPost.map(e => {
 	
 	//obtenemos la ruta (revelada por Astro)
 	const href = e.url as string;
-
-	//usando la url obtenemos el nombre del articulo y al modulo al que pertenecen
-	const [moduleName , articleName] = href.replace(/-/g , " ").split("/").filter(e => e).slice(1).map(e => e.slice(2));
-
-	//usando la informacion definida dentro del documento obtenemos la siguiente info
+	
+	//obtenemos el nombre del modulo al que pertenecen (obtenido de la ruta)
+	const moduleName = href.replace(/-/g , " ").split("/")[2].slice(3);
+	
+	//obtenemos datos para mostrar en la Card (incrustado en el frontmatter)
+	const articleName = e.frontmatter.articleName;
 	const summary = e.frontmatter.summary as string;
 	const iconName =  e.frontmatter.iconName as string;
 
