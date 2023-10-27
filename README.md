@@ -30,5 +30,5 @@ npm run dev
 
 ## Contribucion
 
-- Lea la guía de [contribución](/contributing/general.md) para  modificar y/o corregir la página
+- Lea la guía de [contribución](/contributing/general.md) para  modificar y/o corregir contenido de la página
 - Lea la guía de [redacción](/contributing/articles.md) para crear , modificar y/o corregir artículos
