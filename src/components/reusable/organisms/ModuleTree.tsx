@@ -1,5 +1,5 @@
 import { useState, type FC } from "react";
-import ModuleCard from "@reusable/molecules/ModuleCard";
+import ArticleCard from "@/components/reusable/molecules/ArticleCard";
 import Selector from "../molecules/Selector";
 import capitalize from "@/global/utils/capitalize";
 
@@ -39,7 +39,7 @@ const ModuleTree: FC<ModuleTreeProps> = ({ data }) => {
 			</header>
 			<div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 				{data.filter(e => e.moduleName === moduleSelect).map((e) => (
-					<ModuleCard
+					<ArticleCard
 						key={e.articleName}
 						title={e.articleName}
 						description={e.summary}
