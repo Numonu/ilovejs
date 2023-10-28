@@ -1,6 +1,7 @@
 ---
 import Logo from "@reusable/atoms/Logo.astro";
 import Wrapper from "@reusable/atoms/Wrapper.astro";
+import Licence from "../reusable/atoms/Licence.astro";
 
 ---
 
@@ -11,10 +12,12 @@ import Wrapper from "@reusable/atoms/Wrapper.astro";
                 <Logo/>
                 <span class="block mb-1 text-sm">Gracias por leer! </span> <span class="block opacity-50 text-xs">© 2023-presente. todos los derechos reservados</span>
             </div>
-
-        <span class="text-sm">
-            Creado con <img class="inline-block w-6" src="/resource/svg/heart.svg"/> por <a class="hover:text-pinia-300" href="https://www.twitter.com/@numonudev" target="_blank">@numonudev</a>
-        </span>
+            <div>
+                <span class="mb-4 block text-sm">
+                    Creado con <img class="inline-block w-6" src="/resource/svg/heart.svg"/> por <a class="hover:text-pinia-300" href="https://www.twitter.com/@numonudev" target="_blank">@numonudev</a>
+                </span>
+                <Licence/>
+            </div>
         </div>
     </Wrapper>
 </footer>
