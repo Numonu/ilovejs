@@ -1,4 +1,5 @@
 ---
+import capitalize from '@/global/utils/capitalize';
 interface Props {
   fileName: string;
 }
@@ -80,7 +81,7 @@ if (!me)
       />
       <span class="text-sm opacity-50">Página Anterior</span>
     </div>
-    <span class="block">{me.back.articleName}</span>
+    <span class="block">{capitalize(me.back.articleName)}</span>
   </a>
   <div></div>
   <a
@@ -95,6 +96,6 @@ if (!me)
         alt="arrow icon"
       />
     </div>
-    <span>{me.next.articleName}</span>
+    <span>{capitalize(me.next.articleName)}</span>
   </a>
 </nav>
