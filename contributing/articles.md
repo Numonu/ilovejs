@@ -87,7 +87,7 @@ Deberás rellenar los siguientes campos incrustados en el frontmatter
 #### Adjuntar
 
 - partners : nombres y apellidos de los contribuidores de este artículo
-    - respeta el orden de los nombres de los anteriores contribuidores
+    - se debe respetar el orden de los nombres de los anteriores contribuidores
 - references : nombres y enlaces a las fuentes que usaste `(si lo hiciste)` para redactar el artículo
 - banner : enlace público a la imagen de banner que usara el artículo
 
