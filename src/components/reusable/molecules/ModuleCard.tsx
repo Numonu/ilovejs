@@ -19,7 +19,7 @@ const ModuleCard: FC<ModuleCardProps> = ({
 			href={href}
 		>
 			<div className="border-neutral-600 w-10 aspect-square mb-14 rounded-md border-[1px]">
-				<img src={`resource/svg/${iconName}.svg`} alt={`${iconName} icon`} />
+				<img src={`articles/svg/${iconName}.svg`} alt={`${iconName} icon`} />
 			</div>
 			<h3 className="max-w-[50%] mb-2 text-xl">{capitalize(title)}</h3>
 			<p className="opacity-80 text-sm font-extralight">{description}</p>
