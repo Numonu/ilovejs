@@ -2,7 +2,7 @@
 import "@fontsource/poppins";
 import "@fontsource-variable/roboto-slab";
 
-import SlideBack from "@/components/reusable/organisms/SlideBack.astro";
+import ArticleNavigator from "@/components/reusable/organisms/ArticleNavigator.astro";
 import HomeFooter from "@/components/unique/HomeFooter.astro";
 import HomeHeader from "@/components/unique/HomeHeader.astro";
 import Writers from "@/components/reusable/molecules/Writers.astro";
@@ -48,7 +48,7 @@ const { frontmatter } = Astro.props;
 						</ConditionalRender>
 					</footer>
 					<nav class="mt-16">
-						<SlideBack
+						<ArticleNavigator
 							fileName = {frontmatter.articleName}
 						/>
 					</nav>
