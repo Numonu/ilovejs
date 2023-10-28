@@ -15,9 +15,9 @@ keywords : ["keyword","keyword"]
 references : [
     ["nombre" , "link a la referencia"],
     ["nombre" , "link a la referencia"],
-]      
+] # opcional
 author: autor del artidulo
-partners : ["socio del articulo" , "socio del articulo"]
-banner: "link a la imagen del banner"
-pubDate: 2022-08-08 # fecha de la publicacion
+partners : ["socio del articulo" , "socio del articulo"] # opcional
+banner: "link a la imagen del banner" # opcional
+pubDate: 2022-08-08
 ---
