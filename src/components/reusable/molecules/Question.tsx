@@ -10,7 +10,7 @@ const Question : FC<QuestionProps> = ({question , children}) => {
     const toggle = () => open ? setOpen(false) : setOpen(true);
 
     return <button className="bg-zinc-800 border-pinia-300 px-3 py-5 border-l-4" onClick={toggle}>
-        <header className="flex items-center justify-between">
+        <header className="flex items-start justify-between text-start">
             <h3> {question} </h3>
             <img className={`w-5 transition-transform ${open ? "rotate-45" : "rotate-0"}`} src="resource/svg/plus.svg" alt="simbolo de suma"/>
         </header>
