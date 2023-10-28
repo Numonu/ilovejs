@@ -40,5 +40,5 @@ Para mantener un estándar de calidad en el proyecto, te pedimos que sigas estas
 
 ## Contribucion
 
-- Lea la guía del [proyecto](../README.md) para  mas detalles
-- Lea la guía de [redacción](articles.md) para crear , modificar y/o corregir artículos
+- Lea la [guía del proyecto](../README.md) para  mas detalles
+- Lea la [guía de redacción](articles.md) para crear , modificar y/o corregir artículos
