@@ -82,7 +82,7 @@ Deberás rellenar los siguientes campos incrustados en el frontmatter
 `! Estos campos no se deben modificar si ya fueron definidos`
 
 - author : nombre y apellido del autor del artículo `(Jhon Doe)`
-- pubDate : fecha de publicación del artículo
+- pubDate : fecha de publicación del artículo `(2023-11-10)`
 
 ### Campos Opcionales
 
@@ -106,7 +106,9 @@ Aquí algunas anotaciones extra para escribir contenido de calidad:
 
 - Mantén una correcta ortografía y asegúrate de que el contenido es verídico. Está bien usar referencias externas y citar otro contenido en los que te hayas inspirado
 
-Ahora si está todo listo para que hagas un `pull request`.
+Cuando hayas terminado puedes hacer un `pull request`. Considere leer la [guía de contribución](general.md)
+
+Si aún no lo tienes claro considera mirar el siguiente [ejemplo](../src/assets/example.md)
 
 ## Contribucion
 
