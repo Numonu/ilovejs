@@ -18,7 +18,7 @@ const ModuleCard: FC<ModuleCardProps> = ({
 			className="border-neutral-900 outline-zinc-700 bg-gradient-to-t from-neutral-900 to-zinc-800 block mx-auto w-full max-w-[450px] p-4 border-4 outline outline-1 rounded-lg cursor-pointer hover:from-neutral-950 hover:to-zinc-800"
 			href={href}
 		>
-			<div className="border-neutral-600 w-10 aspect-square mb-14 rounded-md border-[1px]">
+			<div className="border-neutral-600 w-12 p-1 aspect-square mb-14 rounded-md border-[1px]">
 				<img src={`articles/svg/${iconName}.svg`} alt={`${iconName} icon`} />
 			</div>
 			<h3 className="max-w-[50%] mb-2 text-xl">{capitalize(title)}</h3>
