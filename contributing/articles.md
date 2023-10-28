@@ -71,9 +71,11 @@ Deberás rellenar los siguientes campos incrustados en el frontmatter
 
 #### Cards
 
-- iconName : nombre del icono
-    - el icono debe estar en formato `svg` y en la ruta `public/articles/svg`
 - summary : descripción breve de lo que trata el artículo
+- iconName : nombre del archivo svg. **Si el archivo es 'icono.svg' usa solo 'icono'**
+    1. primero dirígete a [svg repo](https://www.svgrepo.com/)
+    2. elige el icono que más te guste y descargalo
+    3. coloca el icono en la ruta `public/articles/svg`
 
 #### Adjuntar
 
@@ -86,10 +88,11 @@ Deberás rellenar los siguientes campos incrustados en el frontmatter
 
 #### Adjuntar
 
+- references : nombres y enlaces a las fuentes que usaste para redactar el artículo
 - partners : nombres y apellidos de los contribuidores de este artículo
     - se debe respetar el orden de los nombres de los anteriores contribuidores
-- references : nombres y enlaces a las fuentes que usaste `(si lo hiciste)` para redactar el artículo
-- banner : enlace público a la imagen de banner que usara el artículo
+- banner : enlace a la imagen que el articulo usara como baner
+    - **esta imagen debe ser un enlace externo**
 
 ### Finalmente
 
