@@ -4,7 +4,7 @@ iconName : web
 layout: "../../../layout/ArticleLayout.astro"
 title: Una guía en profundidad para entender cómo funcionan las páginas web | ILoveJS
 description: Cuando accedemos a una página web, nuestro navegador web (por ejemplo, Chrome, Firefox o Safari) se conecta al servidor alojado en la dirección de la página que estamos intentando acceder y solicita la descarga del documento HTML, CSS y JavaScript. Una vez que el servidor recibe esta petición, envía el documento completo al navegador. El navegador entonces analiza el documento y lo representa visualmente en la pantalla del usuario.
-keywords : ["web","servidores","programacion","desarrollo","informatica","javascript","codigo","desarrollo web","tecnologia","html","css"]
+keywords : ["origenes de la web","como funcionan los servidores","curso de desarrollo web","quien creo la web","protocolos de transferencia","javascript","codigo web","desarrollo web","programacion web","historia de la web","html","css","javascript","funcionamiento de la web","como funciona internet"]
 summary : ¿alguna vez te has preguntado cómo funcionan realmente las páginas web? En este post te hablaré sobre el funcionamiento de las páginas web y sus orígenes.
 author: Juan Villegas
 pubDate: 2023-10-29
@@ -15,26 +15,41 @@ references : [
 
 # Los Origenes y el Funcionamiento de la Web
 
-Las páginas web son una parte vital de nuestra vida, ya que nos permiten acceder a una amplia gama de información y servicios desde cualquier lugar del mundo. Pero, ¿alguna vez te has preguntado cómo funcionan realmente las páginas web? En este post te hablaré sobre el funcionamiento de las páginas web y sus orígenes.
+La Web es algo que forma parte integral de nuestras vidas. Desde conectarnos con amigos y familiares hasta comprar cualquier cosa que necesitemos, casi todo lo hacemos a través de la Web. Pero, ¿alguna vez te has preguntado cómo surgió la Web y quién la creó? En esta publicación, echaremos un vistazo a los orígenes de la Web, su creador, el contexto en el que se creó, las mejoras que se han realizado a lo largo de los años y por qué es tan importante hoy en día. También te mostraremos cómo funciona por dentro, qué sucede al ingresar a una página web, cómo se muestra el contenido en la pantalla, qué son los servidores y sus protocolos
 
-## ¿Que es una Pagina Web?
+## Orígenes de la Web y su creador
 
-Para empezar, una página web es un documento electrónico que se encuentra alojado en un servidor de internet. Este documento se compone principalmente de tres elementos: *HTML (lenguaje de marcado de hipertexto)*, *CSS (hojas de estilo en cascada)* y *JavaScript*. HTML se utiliza para crear la estructura básica de la página, mientras que CSS se utiliza para darle estilo y diseño. JavaScript se utiliza para hacer que la página sea interactiva para el usuario.
+![usando una laptop para programar una pagina web](https://images.pexels.com/photos/5483077/pexels-photo-5483077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
 
-## Como funcionan los Navegadores
+*La Web fue creada en 1989 por Tim Berners-Lee*, un ingeniero de software británico. Berners-Lee trabajaba en el CERN, el laboratorio de física de partículas en Suiza. Él quería una forma de compartir información y colaborar en la investigación, por lo que creó la web como un sistema para compartir documentos entre colegas. Su idea era simple: crear enlaces entre documentos para que los usuarios pudieran navegar fácilmente entre ellos. Esta fue la idea fundamental que llevó a la creación de la Web tal como la conocemos hoy en día.
 
-Cuando accedemos a una página web, nuestro navegador web (por ejemplo, Chrome, Firefox o Safari) se conecta al servidor alojado en la dirección de la página que estamos intentando acceder y solicita la descarga del documento HTML, CSS y JavaScript. Una vez que el servidor recibe esta petición, envía el documento completo al navegador. El navegador entonces analiza el documento y lo representa visualmente en la pantalla del usuario.
 
-![servidores informaticos](https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+En ese momento, la mayoría de las comunicaciones y el intercambio de información se realizaban a través de correo electrónico y el acceso a los documentos se limitaba al uso de disquetes. Berners-Lee quería crear algo que pudiera funcionar de manera más eficiente y permitiera una mayor colaboración en línea. Después de trabajar en la Web durante varios años, en 1990 publicó la primera página web del mundo.
 
-Para que una página web pueda ser accesible desde cualquier parte del mundo, necesita estar alojada en un servidor conectado a Internet. Los servidores web son computadoras que se encargan de almacenar los archivos de la página web y servir el documento a los usuarios que lo solicitan. Los servidores web están configurados para funcionar las 24 horas del día, los 7 días de la semana, porque una página web puede ser vista en cualquier momento del día por usuarios de todo el mundo.
+La primera página web del mundo, hospedada en el servidor web de Berners-Lee, era un simple documento de texto que describía el concepto de la web y cómo los usuarios podían configurar su propio servidor web. Berners-Lee y su equipo continuaron mejorando y expandiendo la funcionalidad de la web, introduciendo nuevas tecnologías como *HTML (Lenguaje de Marcado de Hipertexto)*, que permitió a los usuarios crear páginas web con texto, imágenes y enlaces. *En 1991, la Web fue lanzada al público*, cambiando para siempre la forma en que compartimos y accedemos a la información. Esta revolución de la información abrió las puertas a una nueva era de comunicación global y colaboración.
 
-## Los origenes de la Web
+## Mejoras a lo largo de los años
 
-Las páginas web han evolucionado mucho desde sus primeros días en los años 90, cuando *la World Wide Web fue inventada por Sir Tim Berners-Lee.* En aquel entonces, las páginas web eran simples documentos estáticos que contenían sólo texto e imágenes. Con el tiempo, se han desarrollado tecnologías que permiten la creación de páginas web más avanzadas que pueden contener multimedia, animaciones y contenido interactivo.
+A medida que la Web comenzó a ganar popularidad, los desarrolladores comenzaron a agregar nuevas funcionalidades y características. Uno de los mayores avances fue la introducción de los motores de búsqueda, que permitían a los usuarios encontrar información en la Web de manera más eficiente. Otros avances significativos fueron la incorporación de videos y audio en línea, la creación de plataformas de redes sociales y la introducción de aplicaciones móviles.
 
-Con la popularidad de las páginas web, ha surgido la necesidad de asegurar la seguridad y la privacidad de los usuarios. Para lograr esto, se han desarrollado tecnologías como *HTTPS, el protocolo seguro de transferencia de hipertexto*, que cifra la información transmitida entre el servidor y el navegador. Otras tecnologías importantes incluyen los firewalls, que protegen a los usuarios contra los ataques cibernéticos, y la autenticación de dos factores, que ofrece una capa adicional de seguridad.
+![como es el desarrollo web moderno](https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
 
-## Conclusion
+En la actualidad, la Web es una herramienta esencial para la comunicación, la colaboración, la educación y el entretenimiento. Nos permite conectarnos con personas de todo el mundo, obtener información sobre cualquier tema imaginable, realizar transacciones comerciales y mucho más.
 
-En resumen, las páginas web son una parte fundamental de nuestra vida diaria en el mundo digital actual. Con un poco de comprensión sobre cómo funcionan las páginas web, todo el proceso detrás de la visualización y la transferencia de información puede ser más claro. Desde las técnicas de representación hasta las formas de seguridad, cada parte de la web es importante para que podamos disfrutar de un mundo interconectado en línea. Es emocionante pensar en cómo seguirá evolucionando la tecnología de las páginas web y cómo continuará impactando nuestras vidas en el futuro.
+## Cómo funciona la Web por dentro
+
+Cuando ingresamos una dirección web en nuestro navegador, el navegador hace una solicitud al servidor para obtener la página web. El servidor procesa la solicitud y devuelve la página al navegador. Luego, el navegador utiliza HTML, CSS y JavaScript para mostrar la información y los elementos de la página en la pantalla. HTML es el lenguaje de marcado que se utiliza para crear la estructura de la página, CSS se utiliza para darle estilo y JavaScript permite una mayor interactividad en la Web.
+
+Además de los componentes básicos de HTML, CSS y JavaScript, la Web moderna también hace uso de varias otras tecnologías. Una de ellas es *AJAX, que permite a las páginas web cargar información de forma dinámica* sin tener que recargar la página completa. Los Servicios de Aplicación Web, como las API RESTful, también son esenciales en la Web de hoy, al facilitar la interacción entre diferentes aplicaciones web. La Seguridad en la Web también es crucial, con los protocolos HTTPS y las técnicas de encriptación utilizadas para proteger la privacidad y seguridad de los usuarios. En resumen, la Web es un ecosistema vasto y complejo compuesto por múltiples tecnologías, cada una contribuyendo a su funcionalidad y experiencia general.
+
+## Qué son los servidores y sus protocolos
+
+Los servidores son computadoras que alojan los archivos y la información necesarios para que las páginas web se muestren en la pantalla. Los servidores utilizan diferentes protocolos para transferir los datos a los navegadores, uno de los protocolos más comunes es el *HTTP (Protocolo de Transferencia de Hipertexto).*
+
+![servidores que alojan paginas web](https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+
+HTTP es un protocolo sin estado, lo que significa que no guarda ninguna información sobre las transacciones anteriores. Sin embargo, para las aplicaciones que necesitan recordar la información del usuario, como los inicios de sesión y las carritos de compras de los sitios web de comercio electrónico, se utilizan las cookies de HTTP. *Las cookies son pequeños archivos de datos que se almacenan en el navegador del usuario y permiten al servidor recordar la información del usuario* en visitas posteriores.
+
+## Conclusion:
+
+En resumen, la Web ha recorrido un largo camino desde sus humildes comienzos en 1989. Ha evolucionado para convertirse en una herramienta esencial en nuestro día a día. Además, su fundamento es muy sencillo y se basa en la idea de compartir información. Ahora sabes cómo funciona por dentro, qué son los servidores y sus protocolos y qué son HTML, CSS y JavaScript. ¡Esperamos que este artículo te haya brindado una mejor comprensión de esta tecnología increíblemente útil!
