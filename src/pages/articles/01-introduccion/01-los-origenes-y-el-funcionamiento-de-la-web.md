@@ -25,7 +25,7 @@ Para empezar, una página web es un documento electrónico que se encuentra aloj
 
 Cuando accedemos a una página web, nuestro navegador web (por ejemplo, Chrome, Firefox o Safari) se conecta al servidor alojado en la dirección de la página que estamos intentando acceder y solicita la descarga del documento HTML, CSS y JavaScript. Una vez que el servidor recibe esta petición, envía el documento completo al navegador. El navegador entonces analiza el documento y lo representa visualmente en la pantalla del usuario.
 
-![servidores informaticos de color amarillo neon](https://cdn.leonardo.ai/users/11921fdd-d4bf-451b-899a-d586b1a7ee01/generations/11984db0-a4f2-45b6-9de6-caf95b155c6c/Leonardo_Diffusion_XL_google_computer_servers_lit_up_with_yell_0.jpg)
+![servidores informaticos](https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
 
 Para que una página web pueda ser accesible desde cualquier parte del mundo, necesita estar alojada en un servidor conectado a Internet. Los servidores web son computadoras que se encargan de almacenar los archivos de la página web y servir el documento a los usuarios que lo solicitan. Los servidores web están configurados para funcionar las 24 horas del día, los 7 días de la semana, porque una página web puede ser vista en cualquier momento del día por usuarios de todo el mundo.
 
