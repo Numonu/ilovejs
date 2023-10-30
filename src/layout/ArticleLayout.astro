@@ -151,6 +151,22 @@ const { frontmatter } = Astro.props;
 				width : 100% !important;
 				margin: 3rem 0 !important;
 			}
+			p > a{
+				color: var(--pinia);
+			}
+			p > a::after{
+				content: "";
+				display: inline-block;
+				margin-left: 2px;
+				background-image: url(/articles/svg/arrow_slide.svg);
+				background-size : cover;
+				width: 1rem;
+				aspect-ratio: 1/1;
+			}
+			p > a:hover{
+				text-decoration: underline;
+				text-underline-offset: 4px;
+			}
 			em{
 				font-weight: 600 !important;
 			}
