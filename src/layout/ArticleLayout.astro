@@ -101,12 +101,19 @@ const { frontmatter } = Astro.props;
 			ul,
 			pre,
 			{
-				margin-bottom: 2rem !important;
+				/* margin-bottom: 2rem !important;
+				padding-left : 2rem !important; */
 			}
 			li{
+				margin-left: 2rem !important;
 				margin-bottom : 1rem !important;
+				position: relative;
 			}
 			li::before {
+				position: absolute;
+				left: 0;
+				top: 1/2;
+				transform: translateX(-200%) translateY(100%);
 				content: "";
 				width: 0.4rem;
 				margin-right: 0.5rem;
