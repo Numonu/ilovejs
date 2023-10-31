@@ -1,5 +1,5 @@
 ---
-articleName : instalacion de nodeJS
+articleName : instalación de nodeJS
 
 # Para las Cards
 
@@ -9,8 +9,8 @@ summary : instalacion de NodeJS
 # Metadatos
 
 layout: ../../../layout/ArticleLayout.astro
-title: instalacion de nodeJS
-description: instalacion de NodeJS
+title: instalación de nodeJS
+description: instalación de NodeJS
 keywords : ["articulo","nuevo"]
 
 # Adjuntar

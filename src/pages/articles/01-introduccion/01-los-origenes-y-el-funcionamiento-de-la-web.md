@@ -1,5 +1,5 @@
 ---
-articleName : Los Origenes y el Funcionamiento de la Web
+articleName : Los Orígenes y el Funcionamiento de la Web
 iconName : web
 layout: "../../../layout/ArticleLayout.astro"
 title: Una guía en profundidad para entender cómo funcionan las páginas web | ILoveJS
@@ -13,7 +13,7 @@ references : [
 ]
 ---
 
-# Los Origenes y el Funcionamiento de la Web
+# Los Orígenes y el Funcionamiento de la Web
 
 La Web es algo que forma parte integral de nuestras vidas. Desde conectarnos con amigos y familiares hasta comprar cualquier cosa que necesitemos, casi todo lo hacemos a través de la Web. Pero, ¿alguna vez te has preguntado cómo surgió la Web y quién la creó? En esta publicación, echaremos un vistazo a los orígenes de la Web, su creador, el contexto en el que se creó, las mejoras que se han realizado a lo largo de los años y por qué es tan importante hoy en día. También te mostraremos cómo funciona por dentro, qué sucede al ingresar a una página web, cómo se muestra el contenido en la pantalla, qué son los servidores y sus protocolos
 
