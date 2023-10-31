@@ -5,7 +5,7 @@ layout: "../../../layout/ArticleLayout.astro"
 title: Una guía en profundidad para entender cómo funcionan las páginas web | ILoveJS
 description: Cuando accedemos a una página web, nuestro navegador web (por ejemplo, Chrome, Firefox o Safari) se conecta al servidor alojado en la dirección de la página que estamos intentando acceder y solicita la descarga del documento HTML, CSS y JavaScript. Una vez que el servidor recibe esta petición, envía el documento completo al navegador. El navegador entonces analiza el documento y lo representa visualmente en la pantalla del usuario.
 keywords : ["origenes de la web","como funcionan los servidores","curso de desarrollo web","quien creo la web","protocolos de transferencia","javascript","codigo web","desarrollo web","programacion web","historia de la web","html","css","javascript","funcionamiento de la web","como funciona internet"]
-summary : ¿alguna vez te has preguntado cómo funcionan realmente las páginas web? En este post te hablaré sobre el funcionamiento de las páginas web y sus orígenes.
+summary : ¿alguna vez te has preguntado cómo funcionan realmente las páginas web? En este articulo te hablaré sobre el funcionamiento de las páginas web y sus orígenes.
 author: Juan Villegas
 pubDate: 2023-10-29
 references : [
