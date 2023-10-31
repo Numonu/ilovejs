@@ -17,7 +17,7 @@ references : [
 
 La Web es algo que forma parte integral de nuestras vidas. Desde conectarnos con amigos y familiares hasta comprar cualquier cosa que necesitemos, casi todo lo hacemos a través de la Web. Pero, ¿alguna vez te has preguntado cómo surgió la Web y quién la creó? En esta publicación, echaremos un vistazo a los orígenes de la Web, su creador, el contexto en el que se creó, las mejoras que se han realizado a lo largo de los años y por qué es tan importante hoy en día. También te mostraremos cómo funciona por dentro, qué sucede al ingresar a una página web, cómo se muestra el contenido en la pantalla, qué son los servidores y sus protocolos
 
-## Orígenes de la Web y su creador
+## Los Orígenes de la Web
 
 ![usando una laptop para programar una pagina web](https://images.pexels.com/photos/5483077/pexels-photo-5483077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
 
@@ -36,20 +36,36 @@ A medida que la Web comenzó a ganar popularidad, los desarrolladores comenzaron
 
 En la actualidad, la Web es una herramienta esencial para la comunicación, la colaboración, la educación y el entretenimiento. Nos permite conectarnos con personas de todo el mundo, obtener información sobre cualquier tema imaginable, realizar transacciones comerciales y mucho más.
 
-## Cómo funciona la Web por dentro
+## ¿ Cómo funciona la Web por dentro ?
 
 Cuando ingresamos una dirección web en nuestro navegador, el navegador hace una solicitud al servidor para obtener la página web. El servidor procesa la solicitud y devuelve la página al navegador. Luego, el navegador utiliza HTML, CSS y JavaScript para mostrar la información y los elementos de la página en la pantalla. HTML es el lenguaje de marcado que se utiliza para crear la estructura de la página, CSS se utiliza para darle estilo y JavaScript permite una mayor interactividad en la Web.
 
 Además de los componentes básicos de HTML, CSS y JavaScript, la Web moderna también hace uso de varias otras tecnologías. Una de ellas es *AJAX, que permite a las páginas web cargar información de forma dinámica* sin tener que recargar la página completa. Los Servicios de Aplicación Web, como las API RESTful, también son esenciales en la Web de hoy, al facilitar la interacción entre diferentes aplicaciones web. La Seguridad en la Web también es crucial, con los protocolos HTTPS y las técnicas de encriptación utilizadas para proteger la privacidad y seguridad de los usuarios. En resumen, la Web es un ecosistema vasto y complejo compuesto por múltiples tecnologías, cada una contribuyendo a su funcionalidad y experiencia general.
 
-## Qué son los servidores y sus protocolos
+## ¿ Qué son los servidores ?
 
-Los servidores son computadoras que alojan los archivos y la información necesarios para que las páginas web se muestren en la pantalla. Los servidores utilizan diferentes protocolos para transferir los datos a los navegadores, uno de los protocolos más comunes es el *HTTP (Protocolo de Transferencia de Hipertexto).*
+Un servidor es básicamente un ordenador de gran capacidad que se utiliza para almacenar y procesar información y recursos. Cada vez que accedemos a una página web, enviamos una petición a un servidor remoto para que nos envíe a nuestro ordenador la información que estamos buscando. Cuando escribimos un correo electrónico, la información se envía a un servidor para su posterior procesamiento. Los servidores pueden ser utilizados por empresas, organizaciones y particulares para almacenar y procesar grandes cantidades de datos y recursos.
+
+Además, los servidores pueden tener diferentes funciones dependiendo del tipo de servicios que ofrecen. Por ejemplo, los servidores de correo electrónico se utilizan para almacenar, gestionar y enviar correo electrónico, mientras que los servidores web se utilizan para alojar y servir páginas web. Los servidores de bases de datos se utilizan como almacenamiento centralizado para datos, mientras que los servidores de archivos se utilizan para almacenar y compartir archivos.
 
 ![servidores que alojan paginas web](https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
 
-HTTP es un protocolo sin estado, lo que significa que no guarda ninguna información sobre las transacciones anteriores. Sin embargo, para las aplicaciones que necesitan recordar la información del usuario, como los inicios de sesión y las carritos de compras de los sitios web de comercio electrónico, se utilizan las cookies de HTTP. *Las cookies son pequeños archivos de datos que se almacenan en el navegador del usuario y permiten al servidor recordar la información del usuario* en visitas posteriores.
+Los servidores funcionan gracias a los protocolos de comunicación, que son las reglas que rigen cómo los dispositivos se conectan y comunican en una red. Los protocolos se utilizan para enviar y recibir información en paquetes, y asegurar que estos paquetes lleguen al destino adecuado.
 
-## Conclusion:
+### Protocolo HTTP
 
-En resumen, la Web ha recorrido un largo camino desde sus humildes comienzos en 1989. Ha evolucionado para convertirse en una herramienta esencial en nuestro día a día. Además, su fundamento es muy sencillo y se basa en la idea de compartir información. Ahora sabes cómo funciona por dentro, qué son los servidores y sus protocolos y qué son HTML, CSS y JavaScript. ¡Esperamos que este artículo te haya brindado una mejor comprensión de esta tecnología increíblemente útil!
+*HTTP significa Protocolo de Transferencia de Hipertexto*, y es un protocolo de red que se utiliza para la comunicación en la World Wide Web.
+
+Se utiliza para la comunicación entre clientes y servidores en la World Wide Web. A través del protocolo se envían y reciben datos entre los diferentes dispositivos conectados a la red. Cuando ingresamos una dirección web en nuestro navegador, este envía una solicitud al servidor web en busca de la información solicitada. El servidor recibe esta solicitud y envía la respuesta al navegador del usuario.
+
+HTTP utiliza una estructura de comunicación basada en solicitudes y respuestas, es decir, el navegador envía una solicitud al servidor, y el servidor envía una respuesta al navegador. Estas solicitudes y respuestas se envían en forma de mensajes, que contienen diferentes componentes, como la línea de inicio, el encabezado y el cuerpo. La línea de inicio contiene información sobre el tipo de solicitud o respuesta que se está enviando, mientras que el encabezado contiene información adicional sobre la solicitud o respuesta, como la fecha y la hora de la transacción.
+
+El protocolo HTTP también utiliza diferentes métodos de solicitud, que son utilizados por los diferentes navegadores para comunicarse con los servidores. Los métodos más comunes son GET y POST. GET se utiliza para solicitar información de un servidor, mientras que POST se utiliza para enviar información a un servidor. Otros métodos incluyen PUT, DELETE y HEAD, cada uno con una función específica.
+
+## Resumen:
+
+*La web fue creada en 1989 por Tim Berners-Lee*, un ingeniero del CERN en Suiza, con el objetivo de compartir información y colaborar en la investigación. Internet revolucionó la forma en que compartimos información y dio lugar a avances significativos, como los motores de búsqueda, videos, redes sociales y aplicaciones móviles.
+
+Cuando ingresamos una dirección web en nuestro navegador, este solicita la página al servidor, que procesa la solicitud y envía la página de vuelta. El navegador utiliza HTML, CSS y JavaScript para mostrar la información en la pantalla.
+
+Los servidores desempeñan un papel esencial al almacenar y procesar información, y la comunicación en Internet se rige por protocolos, como *HTTP, que permiten la transferencia de datos entre dispositivos* en la red.
