@@ -1,5 +1,5 @@
 ---
-articleName: conoce a javascript
+articleName: Todo lo que necesitas saber de JavaScript
 iconName: code_screen
 layout: ../../../layout/ArticleLayout.astro
 title: Descubre que es JavaScript y porque es tan importante | ILoveJS
