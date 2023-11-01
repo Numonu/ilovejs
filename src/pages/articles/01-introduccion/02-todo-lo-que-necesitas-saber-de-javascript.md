@@ -28,7 +28,7 @@ La guerra de los navegadores tuvo un impacto significativo en el desarrollo de J
 
 A lo largo de los años, JavaScript ha evolucionado significativamente y se ha convertido en uno de los lenguajes de programación más populares
 
-## ¿ Que es JavaScript y por que es tan importante ?
+## ¿ Que es JavaScript ?
 
 *Javascript fue creado en 1995 por Brendan Eich*, un desarrollador de la empresa Netscape. Este lenguaje fue diseñado para agregar interactividad y dinamismo a los sitios web. Desde entonces, Javascript ha evolucionado constantemente y ha ganado popularidad debido a su capacidad para llevar la funcionalidad del sitio web al siguiente nivel. Con la ayuda de Javascript, los desarrolladores web pueden crear aplicaciones web de una sola página, juegos en línea, animaciones y mucho más.
 
@@ -42,7 +42,7 @@ Además, Javascript es un lenguaje de programación que se adapta a tus necesida
 
 Desde su creación, JavaScript ha ganado popularidad de manera constante y espectacular. En los primeros días, su uso estaba limitado principalmente a pequeñas funcionalidades en sitios web. Pero con el lanzamiento de *AJAX (Asynchronous JavaScript and XML)* en 2005, JavaScript alcanzó nuevas alturas. AJAX permitió cargar contenido en una página web sin tener que recargar toda la página, haciendo que los sitios web fueran mucho más rápidos y reactivos. Esta fue una de las principales razones por las que JavaScript se convirtió en un elemento esencial de la web.
 
-## Como ha Evolucionado JavaScript
+## ¿ Como ha Evolucionado JavaScript ? 
 
 Los primeros años de Javascript se centraron principalmente en mejorar su capacidad para interactuar con la web, incluyendo la capacidad de crear efectos visualmente atractivos. En estos primeros años, Javascript se utilizaba principalmente para realizar pequeñas tareas de scripting y para agregar elementos interactivos.
 
