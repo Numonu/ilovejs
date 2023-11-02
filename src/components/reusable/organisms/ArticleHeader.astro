@@ -1,0 +1,25 @@
+---
+import Logo from "@reusable/atoms/Logo.astro";
+import PopLink from "@reusable/atoms/PopLink.astro";
+import Wrapper from "@reusable/atoms/Wrapper.astro";
+---
+
+<header class="bg-zinc-800 py-4">
+	<Wrapper>
+		<div class="flex">
+			<div class="grow flex items-center gap-8 text-lg">
+				<Logo/>
+                <hr class="bg-white hidden w-[1px] h-full lg:block">
+				<nav class="hidden gap-8 lg:flex">
+					<PopLink href="/">Inicio</PopLink>
+					<PopLink>Modulos</PopLink>
+				</nav>
+			</div>
+			<div class="flex items-center gap-8">
+				<a class="block w-8 brightness-90 hover:brightness-110" href="https://github.com/numonu/ilovejs" target="_blank">
+					<img src="/resource/svg/github.svg" alt="continue to github">
+				</button>
+			</div>
+		</div>
+	</Wrapper>
+</header>

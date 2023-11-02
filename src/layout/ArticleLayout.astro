@@ -4,10 +4,10 @@ import "@fontsource-variable/roboto-slab";
 
 import ArticleNavigator from "@/components/reusable/organisms/ArticleNavigator.astro";
 import HomeFooter from "@/components/unique/HomeFooter.astro";
-import HomeHeader from "@/components/unique/HomeHeader.astro";
 import Writers from "@/components/reusable/molecules/Writers.astro";
 import References from "@/components/reusable/molecules/References.astro";
 import ConditionalRender from "@/components/reusable/atoms/ConditionalRender.astro";
+import ArticleHeader from "@/components/reusable/organisms/ArticleHeader.astro";
 
 const { frontmatter } = Astro.props;
 ---
@@ -27,7 +27,7 @@ const { frontmatter } = Astro.props;
 			class="bg-zinc-900 text-neutral-50 pattern min-h-screen font-poppins"
 		>
 			<div class="sticky top-0 z-10">
-				<HomeHeader />
+				<ArticleHeader />
 			</div>
 			<section
 				class="bg-zinc-950 h-[7rem] bg-cover bg-center md:h-[15rem]"
