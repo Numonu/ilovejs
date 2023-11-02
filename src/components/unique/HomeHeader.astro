@@ -2,6 +2,12 @@
 import Logo from "@reusable/atoms/Logo.astro";
 import PopLink from "@reusable/atoms/PopLink.astro";
 import Wrapper from "@reusable/atoms/Wrapper.astro";
+import ConditionalRender from "../reusable/atoms/ConditionalRender.astro";
+
+interface Props{
+	enableActionBtn? : boolean
+}
+const {enableActionBtn = true} = Astro.props;
 ---
 
 <header class="bg-zinc-800 py-4">
@@ -17,12 +23,14 @@ import Wrapper from "@reusable/atoms/Wrapper.astro";
 				</nav>
 			</div>
 			<div class="flex items-center gap-8">
-				<a class="isolate relative group" href="/#modulos">
-					<div class="bg-pinia-300 text-black p-2 rounded-md group-hover:-translate-x-1 group-hover:-translate-y-1 transition-transform">
-						Empieza Ahora
-					</div>
-					<div class="bg-green-400 absolute inset-0 -z-10 rounded-md"></div>
-				</a>
+				<ConditionalRender controller={enableActionBtn}>
+					<a class="isolate relative group" href="/#modulos">
+						<div class="bg-pinia-300 text-black p-2 rounded-md group-hover:-translate-x-1 group-hover:-translate-y-1 transition-transform">
+							Empieza Ahora
+						</div>
+						<div class="bg-green-400 absolute inset-0 -z-10 rounded-md"></div>
+					</a>
+				</ConditionalRender>
 				<a class="block w-8 brightness-90 hover:brightness-110" href="https://github.com/numonu/ilovejs" target="_blank">
 					<img src="/resource/svg/github.svg" alt="continue to github">
 				</button>
