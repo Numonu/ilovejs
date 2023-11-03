@@ -153,7 +153,7 @@ const { frontmatter } = Astro.props;
 				margin: 3rem 0 !important;
 			}
 			p > a , li > a{
-				color: var(--pinia);
+				color: #67ff67;
 			}
 			p > a::after , li > a::after{
 				content: "";
@@ -169,15 +169,10 @@ const { frontmatter } = Astro.props;
 				text-underline-offset: 4px;
 			}
 			em{
-				font-weight: 600 !important;
+				color: var(--pinia);
 			}
 			strong{
-				display : inline-block;
-				padding : 0 .1rem;
-				color : black;
-				border-bottom : .2rem solid rgb(209, 0, 150);
-				border-radius: .2rem;
-				background-color : rgb(252, 56, 197);
+				font-weight: 600 !important;
 			}
 		</style>
 	</body>
