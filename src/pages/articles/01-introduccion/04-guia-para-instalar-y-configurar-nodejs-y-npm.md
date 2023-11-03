@@ -31,45 +31,45 @@ El primer paso es dirigirse al <a href="https://nodejs.org/en" target="_blank">s
 
 Haz clic en el recuadro marcado en rojo para descargar la versión *LTS (Long Term Support)*. Esta elección garantiza que recibirás actualizaciones regulares, que incluyen correcciones de errores y mejoras de seguridad, entre otras.
 
-![home page de nodejs](/articles/img/como-instalar-nodejs-y-npm/node_web_screen.png)
+![sitio web oficial de node.js](/articles/img/como-instalar-nodejs-y-npm/node_web_screen.png)
 
 Una vez finalizada la descarga, ejecuta el instalador de Node.js. Entonces deberías ver el asistente de instalación. 
 
 Haz clic en el botón **Next**
 
-<img src="/articles/img/como-instalar-nodejs-y-npm/setup_00.png" style="margin: 3rem 0;"/>
+<img src="/articles/img/como-instalar-nodejs-y-npm/setup_00.png" style="margin: 3rem 0;" alt="ayudante de instalacion para node.js"/>
 
 Acepta los términos y condiciones de uso y continúa haciendo clic en el botón **Next**
 
-<img src="/articles/img/como-instalar-nodejs-y-npm/setup_01.png" style="margin: 3rem 0;"/>
+<img src="/articles/img/como-instalar-nodejs-y-npm/setup_01.png" style="margin: 3rem 0;" alt="terminos y condiciones al instalar node.js"/>
 
 A continuación, puedes elegir la ruta de instalación de Node.js. Si la ruta por defecto es adecuada para ti, puedes dejarla así. Si deseas cambiarla, siéntete libre de hacerlo, luego haz clic en el botón **Next**
 
-<img src="/articles/img/como-instalar-nodejs-y-npm/setup_02.png" style="margin: 3rem 0;"/>
+<img src="/articles/img/como-instalar-nodejs-y-npm/setup_02.png" style="margin: 3rem 0;" alt="ruta local de instalacion para node.js"/>
 
 En este punto, comenzamos a explorar los módulos de instalación que se incluirán con Node.js. 
 
 Continúa haciendo clic en el botón **Next**
 
-<img src="/articles/img/como-instalar-nodejs-y-npm/setup_03.png" style="margin: 3rem 0;"/>
+<img src="/articles/img/como-instalar-nodejs-y-npm/setup_03.png" style="margin: 3rem 0;" alt="modulos que se instalan junto a node.js"/>
 
 La siguiente ventana te brinda la opción de instalar la herramienta "Chocolatey," que facilita el trabajo con bibliotecas de Node.js que utilizan C/C++. Normalmente, esto se requiere para tareas complejas de bajo nivel. En mi caso, no lo necesitaré, así que dejaré esta opción desmarcada.
 
 Continúa haciendo clic en el botón **Next**
 
-<img src="/articles/img/como-instalar-nodejs-y-npm/setup_04.png" style="margin: 3rem 0;"/>
+<img src="/articles/img/como-instalar-nodejs-y-npm/setup_04.png" style="margin: 3rem 0;" alt="herramientas adicionales a node.js"/>
 
 Finalmente, llegarás a la pantalla final, que te ofrece una oportunidad para retroceder y cambiar alguna configuración, lo cual no es necesario en nuestro caso.
 
 Continúa haciendo clic en el botón **Install**
 
-<img src="/articles/img/como-instalar-nodejs-y-npm/setup_05.png" style="margin: 3rem 0;"/>
+<img src="/articles/img/como-instalar-nodejs-y-npm/setup_05.png" style="margin: 3rem 0;" alt="instalacion usando el ayudante de instalacion"/>
 
 Después de unos segundos, la instalación habrá finalizado. Ahora es el momento de verificar si todo se ha realizado correctamente.
 
 Presiona las teclas **Windows + R** y busca *cmd (abreviatura de CoMmanD)*.
 
-<img src="/articles/img/como-instalar-nodejs-y-npm/search.png" style="margin: 3rem 0;"/>
+<img src="/articles/img/como-instalar-nodejs-y-npm/search.png" style="margin: 3rem 0;" alt="cuadro de busqueda en windows"/>
 
 Una vez que tengas el CMD abierto, ejecuta los siguientes comandos para verificar las versiones de Node.js y NPM que tienes instaladas:
 
@@ -87,7 +87,7 @@ npm --version
 
 Deberías ver un resultado similar al siguiente:
 
-<img src="/articles/img/como-instalar-nodejs-y-npm/output.png" style="margin: 3rem 0;"/>
+<img src="/articles/img/como-instalar-nodejs-y-npm/output.png" style="margin: 3rem 0;" alt="imprimiendo en la consola la version de node y npm"/>
 
 ## Conclusión
 
