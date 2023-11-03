@@ -27,7 +27,7 @@ Además en el proceso también instalaremos *NPM (node package manager)*, que no
 
 ## Como Descargar e Instalar Node.js
 
-El primer paso es dirigirse al [sitio web oficial de Node.js](https://nodejs.org/en). Una vez allí, sigue los siguientes pasos.
+El primer paso es dirigirse al <a href="https://nodejs.org/en" target="_blank">sitio web oficial de Node.js</a>. Una vez allí, sigue los siguientes pasos.
 
 Haz clic en el recuadro marcado en rojo para descargar la versión *LTS (Long Term Support)*. Esta elección garantiza que recibirás actualizaciones regulares, que incluyen correcciones de errores y mejoras de seguridad, entre otras.
 
