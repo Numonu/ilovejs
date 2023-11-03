@@ -24,7 +24,7 @@ Node JS puede que no sea un término familiar para todos, pero en el mundo de la
 
 ## ¿Quién lo creó y en qué contexto?
 
-Los orígenes de Node.js se remontan a la primavera de 2009, cuando *Ryan Dahl*, un programador estadounidense, estaba trabajando en una de sus aplicaciones en una serie de eventos en la plataforma de servidor en la que trabajaba. Dahl se sentía frustrado con la complejidad y limitaciones de los servidores web como Apache HTTP Server, que no eran adecuados para manejar las tareas asíncronas. Entonces decidió construir su propia solución, que eventualmente se convirtió en Node.js.
+Los orígenes de Node.js se remontan a la primavera de 2009, cuando **Ryan Dahl**, un programador estadounidense, estaba trabajando en una de sus aplicaciones en una serie de eventos en la plataforma de servidor en la que trabajaba. Dahl se sentía frustrado con la complejidad y limitaciones de los servidores web como Apache HTTP Server, que no eran adecuados para manejar las tareas asíncronas. Entonces decidió construir su propia solución, que eventualmente se convirtió en Node.js.
 
 Dahl se inspiró en dos tecnologías para el diseño de Node.js: uno era threadless Comet, que se utiliza en el envío y recepción de mensajes en tiempo real. El otro era el proyecto V8, que se utiliza para ejecutar códigos en JavaScript, como el que se usa en Google Chrome. Dahl se propuso unir estas dos herramientas para construir una plataforma de servidor que fuera capaz de manejar la asíncrona y la escalabilidad de un servidor web moderno.
 
