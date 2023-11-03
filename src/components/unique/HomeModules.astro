@@ -1,5 +1,6 @@
 ---
 import ModuleTree from "@reusable/organisms/ModuleTree";
+import UpdateTime from "../reusable/atoms/UpdateTime.astro";
 
 //Obtenemos todos los documuentos 
 const allPost = await Astro.glob("../../pages/articles/*/*.md");
@@ -30,4 +31,8 @@ const data = allPost.map(e => {
 
 <section id="modulos" class="mb-section">
 	<ModuleTree data={data} client:visible/>
+	<br/>
+	<footer>
+		<UpdateTime/>
+	</footer>
 </section>
