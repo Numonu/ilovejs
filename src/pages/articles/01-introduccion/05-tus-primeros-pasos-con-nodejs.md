@@ -21,8 +21,8 @@ pubDate: 2022-11-05
 
 ### Relacionado
 
-- [todo lo que necesitas saber de node.js](./03-todo-lo-que-necesitas-saber-de-nodejs)
-- [como instalar node.js](./04-guia-para-instalar-y-configurar-nodejs-y-npm)
+- [Todo lo que necesitas saber de node.js](./03-todo-lo-que-necesitas-saber-de-nodejs)
+- [Como instalar y configurar node.js](./04-guia-para-instalar-y-configurar-nodejs-y-npm)
 
 # Tus Primeros Pasos con Node.js
 
@@ -50,13 +50,13 @@ En este momento, podemos escribir alguna expresión en JavaScript para ver los r
 console.log("Hola Mundo")
 ```
 
-si pulsamos enter en nuestro teclado podremos ver el resultado inmediatamente.
+Si pulsamos enter en nuestro teclado podremos ver el resultado inmediatamente.
 
 <img class="img-default" src="/articles/img/tus-primeros-pasos-con-nodejs/cmd_result.png" alt="resultado de la ejecucion de una expresion utilizando el REPL de node.js"/>
 
 En resumen, el REPL tiene un propósito único, evaluar expresiones de una sola línea y mostrar los resultados de inmediato. Es una herramienta excelente cuando deseamos probar conceptos simples. Aunque es posible escribir declaraciones más extensas y complejas en múltiples líneas, el REPL se utiliza principalmente para tareas sencillas y rápidas.
 
-## Node.js en nuestro editor de codigo
+## Node.js en nuestro editor de código
 
 Ahora es el momento de ejecutar nuestro primer script de Node.js utilizando un editor de código. Esta será la forma en la que trabajaremos a lo largo de la guía, con algunas excepciones en las que necesitaremos el navegador.
 
