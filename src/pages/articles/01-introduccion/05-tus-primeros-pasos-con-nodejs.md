@@ -16,7 +16,7 @@ keywords : ["runtime de node.js","como depurar con node.js","ejecutar un script 
 # Adjuntar
 
 author: Juan Villegas
-pubDate: 2022-11-05
+pubDate: 2023-11-05
 ---
 
 ### Relacionado
