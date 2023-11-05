@@ -10,8 +10,8 @@ summary : Echa un vistazo a la instalación y configuración de Nodejs y NPM con
 
 layout: ../../../layout/ArticleLayout.astro
 title: Guía paso a paso para instalar y configurar Node.js y NPM en Windows | ILoveJS
-description: Echa un vistazo a la instalación y configuración de Nodejs con esta detallada guía de programación. Tanto si estás empezando, como si eres un programador experimentado, esta guía te llevará a través del proceso con facilidad.
-keywords : ["tutorial de programacion","como instalar nodejs","configurar nodejs","como instalar npm","como configurar npm","tutorial de nodejs","guia de nodejs"]
+description: Echa un vistazo a la instalación y configuración de node.js con esta detallada guía de programación. Tanto si estás empezando, como si eres un programador experimentado, esta guía te llevará a través del proceso con facilidad.
+keywords : ["tutorial de programacion","como instalar node.js","configurar node.js","como instalar npm","como configurar npm","tutorial de node.js","guia de node.js"]
 
 # Adjuntar
 
