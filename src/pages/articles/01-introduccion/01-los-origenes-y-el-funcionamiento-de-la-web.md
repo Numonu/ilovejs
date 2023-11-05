@@ -68,4 +68,4 @@ El protocolo HTTP también utiliza diferentes métodos de solicitud, que son uti
 
 Cuando ingresamos una dirección web en nuestro navegador, este solicita la página al servidor, que procesa la solicitud y envía la página de vuelta. El navegador utiliza HTML, CSS y JavaScript para mostrar la información en la pantalla.
 
-Los servidores desempeñan un papel esencial al almacenar y procesar información, y la comunicación en Internet se rige por protocolos, como *HTTP, que permiten la transferencia de datos entre dispositivos* en la red.
+Los servidores desempeñan un papel esencial al almacenar y procesar información, y la comunicación en Internet se rige por protocolos, como *HTTP, que permiten la transferencia de datos entre dispositivos en la red*.
