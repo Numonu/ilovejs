@@ -78,7 +78,7 @@ Después de unos segundos, la instalación habrá finalizado. Ahora es el moment
 
 Presiona las teclas **Windows + R** y busca _cmd (abreviatura de CoMmanD)_.
 
-<i class="img-default"mg src="/articles/img/como-instalar-nodejs-y-npm/search.png" alt="cuadro de busqueda en windows"/>
+<i class="img-default" src="/articles/img/como-instalar-nodejs-y-npm/search.png" alt="cuadro de busqueda en windows"/>
 
 Una vez que tengas el CMD abierto, ejecuta los siguientes comandos para verificar las versiones de Node.js y NPM que tienes instaladas:
 
@@ -96,7 +96,7 @@ npm --version
 
 Deberías ver un resultado similar al siguiente:
 
-<i class="img-default"mg src="/articles/img/como-instalar-nodejs-y-npm/output.png" alt="imprimiendo en la consola la version de node y npm"/>
+<i class="img-default" src="/articles/img/como-instalar-nodejs-y-npm/output.png" alt="imprimiendo en la consola la version de node y npm"/>
 
 ## Conclusión
 
