@@ -155,6 +155,11 @@ const { frontmatter } = Astro.props;
 			p > a , li > a{
 				color: #98ff98;
 			}
+			blockquote > p > a{
+				background-color: black;
+				padding: .1rem;
+				border-radius: .2rem;
+			}
 			p > a::after , li > a::after{
 				content: "";
 				display: inline-block;
