@@ -1,0 +1,24 @@
+{
+    "types" : [
+        {
+            "type" : "add",
+            "description" : "Se utiliza cuando se agrega un nuevo archivo al proyecto."
+        },
+        {
+            "type" : "update",
+            "description" : "Se emplea cuando se realiza una actualización en una funcionalidad o archivo existente."
+        },
+        {
+            "type" : "feat",
+            "description" : "Se utiliza para indicar la adición de una nueva funcionalidad al proyecto."
+        },
+        {
+            "type" : "core",
+            "description" : "Se usa cuando se instala un nuevo paquete o se modifica la configuración de uno existente en el proyecto."
+        },
+        {
+            "type" : "delete",
+            "description" : "Se emplea cuando se elimina un archivo o recurso del proyecto."
+        }
+    ]
+}
