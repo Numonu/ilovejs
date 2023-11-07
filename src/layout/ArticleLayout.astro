@@ -182,19 +182,33 @@ const { frontmatter } = Astro.props;
 			.img-default{
 				margin: 3rem 0 !important;
 			}
-			blockquote{
-				width: max-content;
-				color: black;
-				background-color: var(--pinia);
-				
+			blockquote{				
 				margin-bottom: 2rem !important;
 				padding: .5rem;
 				border-radius: .5rem;
-				border: 2px solid black;
-
-				outline: 2px solid var(--pinia);
+				border-width: 2px;
+				border-style: solid;
+				outline-width: 2px;
 				outline-style: dashed;
 				outline-offset: 4px;
+			}
+			.warning{
+				color: black;
+				background-color: var(--pinia);
+				border-color:black;
+				outline-color: var(--pinia);
+			}
+			.error{
+				color: white;
+				background-color: red;
+				border-color:black;
+				outline-color: red;
+			}
+			.check{
+				color: black;
+				background-color: greenyellow;
+				border-color:black;
+				outline-color: greenyellow;
 			}
 			blockquote > p{
 				margin: 0 !important;
