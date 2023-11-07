@@ -177,6 +177,23 @@ const { frontmatter } = Astro.props;
 			.img-default{
 				margin: 3rem 0 !important;
 			}
+			blockquote{
+				width: max-content;
+				color: black;
+				background-color: var(--pinia);
+				
+				margin-bottom: 2rem !important;
+				padding: .5rem;
+				border-radius: .5rem;
+				border: 2px solid black;
+
+				outline: 2px solid var(--pinia);
+				outline-style: dashed;
+				outline-offset: 4px;
+			}
+			blockquote > p{
+				margin: 0 !important;
+			}
 		</style>
 	</body>
 </html>
