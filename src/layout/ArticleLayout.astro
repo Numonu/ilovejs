@@ -60,7 +60,7 @@ const { frontmatter } = Astro.props;
 			:root {
 				--pinia: rgb(253 224 71);
 			}
-			h2 , h3{
+			h2 , h3 , h4{
 				margin: 2rem 0 !important;
 			}
 			h1 {
@@ -87,6 +87,13 @@ const { frontmatter } = Astro.props;
 				
 				text-decoration: underline wavy bisque;
 				text-decoration-thickness: 1.5px;
+				text-underline-offset: 8px;
+			}
+			h4 {
+				font-size: 1rem !important;
+				
+				text-decoration: underline wavy white;
+				text-decoration-thickness: 1.3px;
 				text-underline-offset: 8px;
 			}
 			p {
