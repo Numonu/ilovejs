@@ -69,3 +69,14 @@ const title_tl = gsap.timeline({
 
 
 // description reveal
+
+title_tl.from(".description" , {
+    opacity : 0,
+    y : 45,
+    x : 45,
+    scale : 1.2,
+    rotateY : "90deg",
+    skewX : "35deg",
+} , "<90%")
+
+// icon reveal
