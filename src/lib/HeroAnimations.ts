@@ -77,27 +77,27 @@ title_tl.from(".description" , {
     skewX : "35deg",
 } , "<90%")
 
+title_tl.addLabel("description" , ">");
+
 // icon reveal
 
-const icons_tl = gsap.timeline();
-
-icons_tl.from(".js" , {
+title_tl.from(".js" , {
     // x : "+=100",
-    // y : "-=100",
-    opacity : 0,
-    scale : 2,
+    y : "-=100",
+    
+    scale : 0,
     // rotateZ : "180deg",
-    stagger : .2
-})
+    stagger : .1
+}, 0)
 
-icons_tl.from(".crown" , {
+title_tl.from(".crown" , {
     y : "-=50",
     scale : 1.2,
     duration : .1,
     opacity : 0,
-})
+}, "description")
 
-icons_tl.to(".js" , {
+title_tl.to(".js" , {
     y : "+=5",
     repeat : 1,
     yoyo : true,
