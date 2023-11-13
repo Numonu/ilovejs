@@ -1,0 +1,24 @@
+---
+interface Props {
+    phrase: string;
+    className: string;
+}
+const { phrase, className } = Astro.props;
+const words = phrase.split(" ");
+---
+
+{
+    words.map((word, i, arr) => {
+        const output = Array.from(word);
+        return (
+            <span class="inline-block">
+                {output.map((letter) => (
+                    <span style="display: inline-block;" class={className}>
+                        {letter}
+                    </span>
+                ))}
+                {i !== arr.length - 1 && <span class="invisible">.</span>}
+            </span>
+        );
+    })
+}
