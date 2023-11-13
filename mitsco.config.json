@@ -13,6 +13,10 @@
             "description" : "Se utiliza para indicar la adición de una nueva funcionalidad al proyecto."
         },
         {
+            "type" : "style",
+            "description" : "Para cambios visuales que no afectan el funcionamiento"
+        },
+        {
             "type" : "core",
             "description" : "Se usa cuando se instala un nuevo paquete o se modifica la configuración de uno existente en el proyecto."
         },
