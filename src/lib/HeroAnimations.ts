@@ -1,8 +1,6 @@
 import gsap from "gsap";
 
-const title_tl = gsap.timeline({
-    delay: 1,
-});
+const title_tl = gsap.timeline();
 
 
 // title reveal
@@ -80,3 +78,29 @@ title_tl.from(".description" , {
 } , "<90%")
 
 // icon reveal
+
+const icons_tl = gsap.timeline();
+
+icons_tl.from(".js" , {
+    // x : "+=100",
+    // y : "-=100",
+    opacity : 0,
+    scale : 2,
+    // rotateZ : "180deg",
+    stagger : .2
+})
+
+icons_tl.from(".crown" , {
+    y : "-=50",
+    scale : 1.2,
+    duration : .1,
+    opacity : 0,
+})
+
+icons_tl.to(".js" , {
+    y : "+=5",
+    repeat : 1,
+    yoyo : true,
+    duration : .1,
+    ease : "none"
+})
