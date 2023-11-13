@@ -1,4 +1,5 @@
 ---
+import Spanify from "../reusable/atoms/Spanify.astro";
 ---
 <style>
     .pattern{
@@ -8,9 +9,9 @@
         background-image:  radial-gradient(transparent 30% , rgb(24 , 24 , 27) 70%) , linear-gradient(90deg , transparent 90% , var(--line-color) 90%) , linear-gradient(0deg , var(--line-color) 10% , transparent 10%);
         background-size: auto auto , var(--size) var(--size) , var(--size) var(--size);
     }
-    .javascript{
+    /* .javascript{
         text-shadow: rgba(255, 255, 0, 0.5) 0 0 20px;
-    }
+    } */
 </style>
 <section class="pattern py-28 mb-section flex justify-center items-center text-center">
     <div>
@@ -19,7 +20,7 @@
             <img class="absolute translate-y-1 translate-x-1 hue-rotate-[60deg]" src="resource/svg/js.svg" alt="javascript">
             <img class="absolute" src="resource/svg/js.svg" alt="javascript">
         </div>
-        <h1 class="mb-12 text-4xl font-normal font-roboto md:text-6xl ">Aprende <strong class="javascript text-pinia-400 font-medium">JavaScript</strong> para <br class="hidden lg:block"/> <strong class="font-normal">Desarrollo Web</strong></h1>
+        <h1 class="mb-12 text-4xl font-normal font-roboto md:text-6xl "><Spanify phrase="Aprende" className="title"/>{" "}<strong class="font-medium"><Spanify phrase="JavaScript" className="title title-javascript"/></strong>{" "}<Spanify phrase="para" className="title"/>{" "}<br class="hidden lg:block"/> <strong class="font-normal"><Spanify phrase="Desarrollo Web" className="title"/></strong></h1>
         <p class="text-lg font-light">
             Domina <strong class="bg-pinia-400 text-black inline-block px-1 rotate-[3deg]">JavaScript</strong> desde sus fundamentos hasta
             temas avanzados. Una <strong class="text-lime-400 underline decoration-wavy underline-offset-4 capitalize">Guia Gratuita</strong> para <br class="hidden lg:block"/> convertirte en un
@@ -27,3 +28,4 @@
         </p>
     </div>
 </section>
+<script src="../../lib/HeroAnimations.ts"></script>
