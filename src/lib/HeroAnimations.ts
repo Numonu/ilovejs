@@ -7,11 +7,16 @@ title_tl.pause();
 
 const container = document.querySelector(".container") as HTMLElement;
 addEventListener("load" , () => {
-    if (container) {
+    //unable animation in mobile devices
+    if (window.innerWidth <= 768) {
+        container.style.visibility = "inherit";
+        title_tl.progress(1);
+        return;
+    }
+    else if (container) {
         container.style.visibility = "inherit";
         title_tl.play();
     }
-
 })
 
 // title reveal
